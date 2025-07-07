@@ -6,7 +6,7 @@ function adicionar() {
     players[contador].classList.add("selecionado");
     contador++
     if(contador >= 5){
-        contador = 5;
+        contador = 4;
     }
 }
 function remover(){
