@@ -10,9 +10,15 @@ function adicionar() {
     }
 }
 function remover(){
+    if(contador <=4){
     players[contador].classList.remove("selecionado");
     players[contador].classList.add("selecao");
-    contador--
+    contador--}
+    else if(contador == 5){
+            players[contador].classList.remove("selecionado");
+        players[contador].classList.add("selecao");
+        contador--
+    }
     if(contador < 0){
         contador = 0;
     }
