@@ -2,13 +2,12 @@ let players = [document.getElementById("jogador-1"),document.getElementById("jog
 let contador = 0
 
 function adicionar() {
-    players[contador].classList.remove("selecao");
-    players[contador].classList.add("selecionado");
-    contador++
-    if(contador >= 5){
-        contador = 5;
+    if(contador <= 5{
+        players[contador].classList.remove("selecao");
+        players[contador].classList.add("selecionado");
+        contador++   
     }
-}
+}    
 function remover(){
     if(contador <=4){
     players[contador].classList.remove("selecionado");
