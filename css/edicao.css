@@ -1,0 +1,58 @@
+body {
+    background-color: #0d121c; /* Cor escura do fundo (simulando a noite/céu) */
+    font-family: sans-serif; /* Use uma fonte mais elegante se tiver uma customizada */
+    color: #f0f8ff; /* Cor clara para o texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.menu-edicao{
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+.cabecalho {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.cabecalho h1 {
+    font-size: 3.5em;
+    color: #ade8f4; /* Cor para o "Chronicles of Aetheria" */
+    margin-bottom: 5px;
+}
+.cabecalho h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 0;
+}
+.conteudo {
+    display: flex;
+    gap: 20px;
+}
+.painel-esquerda {
+    width: 20%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* Simular o painel */
+    border: 2px solid #3a86ff; /* Simular o brilho azul da borda */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Altura para alinhar com a grelha */
+}
+.mystery-slot {
+    font-size: 4em;
+    opacity: 0.5;
+    color: #999;
+}
+.edicao {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 1px solid white;
+}
