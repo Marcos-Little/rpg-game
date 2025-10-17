@@ -1,0 +1,173 @@
+/* Configurações Globais e Fundo */
+body {
+    background-color: #0d121c; /* Cor escura do fundo (simulando a noite/céu) */
+    font-family: sans-serif; /* Use uma fonte mais elegante se tiver uma customizada */
+    color: #f0f8ff; /* Cor clara para o texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.character-select-screen {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    /* Adicionar um pseudo-elemento para dar a sensação de moldura/brilho */
+}
+
+/* Título do Jogo */
+.game-title {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.game-title h1 {
+    font-size: 3.5em;
+    color: #ade8f4; /* Cor para o "Chronicles of Aetheria" */
+    margin-bottom: 5px;
+}
+.game-title h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Layout Principal */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Painel Esquerdo (Efeito de Espada/Mistério) */
+.left-panel {
+    width: 20%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* Simular o painel */
+    border: 2px solid #3a86ff; /* Simular o brilho azul da borda */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Altura para alinhar com a grelha */
+}
+.mystery-slot {
+    font-size: 4em;
+    opacity: 0.5;
+    color: #999;
+}
+
+/* Grelha de Personagens */
+.character-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.character-card {
+    background: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 230px;
+    border: 3px solid transparent;
+    transition: border 0.3s;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.character-card:hover{
+    border: 2px solid rgba(92, 4, 114, 0.795) ;
+}
+
+.card-image {
+    /* Altura da imagem de personagem, simulada */
+    height: 180px;
+    background: linear-gradient(to bottom, #444, #222); /* Placeholder */
+}
+
+.card-info {
+    text-align: center;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid #333;
+}
+.card-info h3 { margin: 0; font-size: 1em; }
+.card-info p { margin: 0; font-size: 0.8em; color: #aaa; }
+
+
+/* Painel de Status */
+.stats-panel {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #555;
+    padding: 20px;
+    border-radius: 5px;
+    /* Seria necessário um background-image/SVG para a moldura decorativa */
+}
+
+.stats-box, .abilities-box, .lore-box {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #333;
+}
+.stats-box h4, .abilities-box h4 {
+    color: #ffd700; /* Destaque para os títulos */
+    margin-top: 0;
+}
+.stats-box p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.abilities-box ul {
+    list-style: none;
+    padding: 0;
+}
+.abilities-box li {
+    margin: 5px 0;
+    color: #ccc;
+}
+.lore-box p {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #bbb;
+    border-bottom: none;
+}
+
+
+/* Rodapé e Botões */
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.btn.primary {
+    background-color: #3a86ff;
+    color: white;
+}
+.btn.primary:hover {
+    background-color: #0077b6;
+}
+
+.btn.secondary {
+    background-color: #333;
+    color: #ccc;
+    border: 1px solid #555;
+}
+.btn.secondary:hover {
+    background-color: #444;
+}
