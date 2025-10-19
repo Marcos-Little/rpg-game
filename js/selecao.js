@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
         personagem.forEach(personagem => {
             const cartao = document.createElement("div");
             cartao.className = "character-grid";
-            cartao.innerHTML = `<a href = "edicao.html" style="text-decoration: none;"> <div class="character-card">
+            cartao.innerHTML = `<a href = "edicao.html?id=${personagem.id}" style="text-decoration: none;"> <div class="character-card">
                         <div class="card-image"></div>
                         <div class="card-info">
                             <h3 style="text-decoration: none; color: white;">${personagem.nome}</h3>
-                            <p style="text-decoration: none;">${personagem.classe}</p>
+                            <p style="text-decoration: none;">${personagem.raca}</p>
                         </div>
                     </div></a>`;
             painel.appendChild(cartao)
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         id++;
         let nome = "jogador" + id;
-        let classe = "classe"
-        const personagem = {id, nome, classe };
+        let raca = "raça"
+        const personagem = {id, nome, raca };
         criarPersonagem(personagem);
         carregarpersonagem();
     });

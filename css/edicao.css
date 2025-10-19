@@ -52,7 +52,99 @@ body {
 .edicao {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 0.5fr);
     border: 1px solid white;
+}
+
+.img-raca{
+    margin: 10%;
+    background-color: wheat;
+    width: 50%;
+    height: 50%;
+}
+.img-raca img{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    margin: 10%;
+    background-color: black;
+    margin-left: -20%;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+.form .form-linha{
+    margin: 1%;
+    background-color: #0077b6;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.descricao{
+    background-color: black;
+    width: 50%;
+    margin: 10%;
+    margin-top: -25%;
+}
+.descricao h2{
+    font-size: 20px;
+    text-align: center;
+}
+.descricao p{
+    font-size: 12px;
+}
+.status{
+    margin: 10%;
+    background-color: black;
+    margin-left: -20%;
+    width: 100%;
+    margin-top: -25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.btn.primary {
+    background-color: #3a86ff;
+    color: white;
+}
+.btn.primary:hover {
+    background-color: #0077b6;
+}
+
+.btn.secondary {
+    background-color: #333;
+    color: #ccc;
+    border: 1px solid #555;
+}
+.btn.secondary:hover {
+    background-color: #444;
 }

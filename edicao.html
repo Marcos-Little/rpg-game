@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/edicao.css">
 </head>
 <body>
-    <div class="Menu-edicao">
+    <div class="menu-edicao">
         <header class="cabecalho">
             <h1>RPG</h1>
             <h2>Criação de personagem</h2>
@@ -20,8 +20,47 @@
                 </div>
                 <div class="sword-effect"></div>
             </div>
-            <div class="edicao"></div>
+            <div class="edicao">
+                <div class="img-raca">
+                    <img src="img/espada-trunks.png" alt="img-raca">
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="form-linha">
+                            <input type="text" name="" id="">
+                            <button type="button">Masculino</button>
+                        </div>
+                        <div class="form-linha">
+                            <p>Teste</p>
+                            <button type="button">Roletar</button>
+                        </div>
+                        <div class="form-linha">
+                            <p>Teste</p>
+                            <button type="button">Roletar</button>
+                        </div>
+                        <div class="form-linha">
+                            <p>Teste</p>
+                            <button type="button">Roletar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="descricao">
+                    <h2>Descrição</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas exercitationem quisquam similique asperiores, iure explicabo eligendi molestias. Aliquid ullam, quam beatae cumque provident sunt excepturi, quae accusantium porro dolorum officiis.</p>
+                </div>
+                <div class="status"></div>
+            </div>
         </main>
+        <footer class="controls">
+            <button class="btn primary" id="atualizar">Atualizar</button>
+            <button class="btn secondary" id="voltar">voltar</button>
+        </footer>
     </div>
+    <script>
+        const btnvoltar = document.getElementById("voltar");
+        btnvoltar.addEventListener("click", () =>{
+            window.location.href = "teste.html"
+        })
+    </script>
 </body>
 </html>
